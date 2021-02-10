@@ -148,7 +148,7 @@ public class ChequeosAlta extends JPanel {
 					ChequeoDAO cDAO = new ChequeoDAO();
 					cDAO.insert(nuevo_chequeo);
 					SugerenciaDAO sDAO = new SugerenciaDAO();
-					//sDAO.eliminarconFraseFecha(nuevo_chequeo.getFrase(), fecha);
+					sDAO.eliminarconFraseFecha(nuevo_chequeo.getFrase(), fecha);
 					
 					Chequeos chequeos = new Chequeos();
 					chequeos.setMarco(marco);
